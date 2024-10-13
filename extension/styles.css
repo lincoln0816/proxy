@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+  }
+  
+  /* Container and Card Layout */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styles */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Enable Button */
+  .button.enable {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .button.enable:hover {
+    background-color: #43a047;
+    transform: translateY(-3px);
+  }
+  
+  /* Disable Button */
+  .button.disable {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .button.disable:hover {
+    background-color: #e53935;
+    transform: translateY(-3px);
+  }
+  
+  /* Button Active State */
+  .button:active {
+    transform: translateY(0);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 400px) {
+    .card {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  

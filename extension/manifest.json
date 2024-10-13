@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Universal Proxy Extension",
+  "version": "1.0",
+  "description": "Proxy extension for routing traffic through a web proxy",
+  "permissions": [
+    "proxy",
+    "tabs",
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
